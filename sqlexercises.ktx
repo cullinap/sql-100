@@ -1,0 +1,215 @@
+
+
+< q1
+select all records from df1
+
+< h1
+
+< a1
+select * from df1;
+
+
+< q2
+find all the records in df1 where deaths are greater than 50,000
+
+< h2
+
+< a2
+select * 
+from df1
+where  Deaths > 50000;
+
+
+< q3
+find all the records in df1 where deaths are greater than 50,000 and confirmed cases are greater than 2,600,000
+
+< h3
+
+< a3
+select * 
+from df1
+where  Deaths >= 50000 and Confirmed >= 2600000;
+
+
+< q4
+select Country_Region, Confirmed, and Deaths from df1 where Deaths are greater than 30,000
+
+< h4
+
+< a4
+select Country_Region, Confirmed, Deaths 
+from df1
+where Deaths > 30000;
+
+
+< q5
+select Country_Region and change the name to country from df1 where Deaths are greater than 30,000
+
+< h5
+
+< a5
+select Country_Region as country, Deaths 
+from df1
+where Deaths > 30000;
+
+
+< q6
+select Country_Region, Confirmed, Deaths from df1 and identify countries where Confirmed are greater than or equal to 30,000 and label them as HIGH, when they are lower than are equal to 20,000, label them as LOW, else label them as MEDIUM. Name the new column Confirmed_status
+
+< h6
+select Country_Region, Deaths, Confirmed,
+    ... ... Confirmed >= 30000 ... 'HIGH'
+         ... Confirmed <= 20000 ... 'LOW'
+         ... 'MEDIUM'
+    ... ... confirmed_status
+from df1
+
+< a6
+select Country_Region, Deaths, Confirmed,
+    case when Confirmed >= 30000 then 'HIGH'
+         when Confirmed <= 20000 then 'LOW'
+         else 'MEDIUM'
+    end as confirmed_status
+from df1
+
+
+< q7
+
+select rows from df1 where FIPS is null
+
+< h7
+
+< a7
+
+select *
+from df1
+where FIPS is null;
+
+< q8
+find Country_Region, Province_State, confirmed, deaths where Recovered greater than 41000, country starts with A or state ends with e order by deaths from highest to lowest and confirmed lowest to highest
+
+< h8
+
+< a8
+select Country_Region as country, Province_State as state, Confirmed, Deaths
+from df1
+where Recovered > 41000 and (country like 'A%' or state like '%e')
+order by Deaths desc, confirmed;
+
+
+< q9
+select Country_Region and Deaths from df1 and df2 where deaths are more than 40000
+
+< h9
+
+< a9
+select Country_Region, Deaths from df1
+where Deaths > 40000
+union
+select Country_Region, Deaths from df2
+where Deaths > 40000
+
+
+< q10
+
+< h10
+
+< a10
+
+
+< q11
+
+< h11
+
+< a11
+
+
+< q12
+
+< h12
+
+< a12
+
+
+< q13
+
+< h13
+
+< a13
+
+
+< q14
+
+< h14
+
+< a14
+
+
+< q15
+
+< h15
+
+< a15
+
+
+< q16
+
+< h16
+
+< a16
+
+
+< q17
+
+< h17
+
+< a17
+
+
+< q18
+
+< h18
+
+< a18
+
+
+< q19
+
+< h19
+
+< a19
+
+
+< q20
+
+< h20
+
+< a20
+
+
+< q21
+
+< h21
+
+< a21
+
+
+< q22
+
+< h22
+
+< a22
+
+
+< q23
+
+< h23
+
+< a23
+
+
+< q24
+
+< h24
+
+< a24
