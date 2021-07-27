@@ -1,6 +1,4 @@
 name: sql-100-environment
 channels:
-  - conda-forge
-dependencies:
-  - numpy
-  - pandas
+  - defaults
+prefix: /opt/miniconda3/envs/sql-100-environment
