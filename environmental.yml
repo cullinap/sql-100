@@ -1,0 +1,6 @@
+name: sql-100-environment
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - pandas
