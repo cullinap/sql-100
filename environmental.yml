@@ -2,3 +2,7 @@ name: sql-100-environment
 channels:
   - defaults
 prefix: /opt/miniconda3/envs/sql-100-environment
+dependencies:
+  - numpy
+  - matplotlib
+  - pandas
